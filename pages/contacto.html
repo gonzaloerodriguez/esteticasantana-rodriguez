@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "icon" type="image.png" href="../img/logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Estètica Santana</title>
+</head>
+<body class="font"> 
+    <header class="flex__header" id="comienzo">
+        <a href="../index.html"><img class="logo" src="../img/logo.png" alt=""></a>
+        <nav> 
+            <ul class="option">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./tratamientos.html">Tratamientos</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./ubicacion.html">Ubicaciòn</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main> 
+        <!-- Seccion de formularios -->
+        <section class="hero hero__contacto"> 
+            <form class= "contacto" action="">
+                <div>
+                    <label class="datos" for="nombre">Nombre</label>
+                    <input class="datos" id="nombre" type="text" name="nombre">
+                    <input class= "placeholder" placeholder= "Nombre" id="nombre" type="text" name="nombre">  
+                </div>
+                <div>
+                    <label class="datos" for="apellido">Apellido</label>
+                    <input class="datos" id= "apellido" type="text" name="apellido"> 
+                    <input class= "placeholder" placeholder= "Apellido" id="apellido" type="text" name="apellido">
+                </div>
+                <div>
+                    <label class="datos" for="whatsapp">Whatsapp</label>
+                    <input class="datos" id="whatsapp" type="text" name="whatsapp"> 
+                    <input class= "placeholder" placeholder= "Whatsapp" id="whatsapp" type="text" name="whatsapp">
+                </div>
+                <div>
+                    <label class="datos" for="email">Mail</label>
+                    <input class="datos" id="email" type="email" name="email"> 
+                    <input class= "placeholder" placeholder= "Email" id="email" type="text" name="email">
+                </div>
+                <div>
+                    <label class="datos" for="Sexo">Sexo</label>
+                    <select name="Sexo" id="Sexo">
+                        <option value="Seleccionar sexo" hidden selected>Seleccionar sexo</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="Masculino">Masculino</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="datos" for="tratamiento">Tratamiento</label>
+                    <select name="tratamiento" id="tratamiento">
+                        <option value="Seleccionar tratamiento" hidden selected>Seleccionar tratamiento</option>
+                        <option value="Botox">Botox</option>
+                        <option value="Peeling">Peeling</option>
+                        <option value="Plasmaricoenplaquetas">Plasma rico en plaquetas</option>
+                        <option value="Mesoterapiacorporal">Mesoterapia corporal</option>
+                        <option value="Mesoterapiafacial">Mesoterapia facial</option>
+                        <option value="Mesoterapiacapilar">Mesoterapia capilar</option>
+                        <option value="Manejodecicatrices">Manejo de cicatrices</option>
+                        <option value="Dermapen">Dermapen</option>
+                        <option value="Rellenosafaciales">Rellenos faciales</option>
+                        <option value="Adiposidadlocalizada">Adiposidad localizada</option>
+                        <option value="Skinbooster">Skin booster</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                    
+                </div>
+                <div>
+                    <p>Escribenos tu comentario</p>
+                </div>
+                <div>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <input class= "submit" type="submit" value="Enviar">
+                </div>
+                <div>                    
+                    <input class= "reset" type="reset" value="Reestablecer">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="flex__footer">  
+        <section>
+            <a href="../index.html"><img class="logo logo__footer" src="../img/logo.png" alt=""></a>
+            <ul>
+            <a href="./ubicacion.html"><img class="mapa" src="../img/mapa.png" alt=""></a>
+                <div>
+                    <li>Guardia Vieja 3948</li>
+                    <li> C1192AAN - CABA - Argentina</li>
+                </div>
+            </ul>
+            <div>
+                <a class= "arriba" href="#comienzo">Ir arriba</a>
+                <a href="https://es-la.facebook.com/login/device-based/regular/login/" target="_blank"><img class="rrss" src="../img/facebook.png" alt=""></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="rrss" src="../img/instagram.png" alt=""></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img class="rrss" src="../img/whatsapp.png" alt=""></a>
+            </div>
+        </section>              
+    </footer>
+</body>
+</html>
