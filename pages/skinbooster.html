@@ -4,43 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel= "icon" type="image.png" href="../img/logo.png">
+    <link rel= "icon" type="image.png" href="../img/logo2.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Estètica Santana</title>
 </head>
 <body class="font"> 
     <header class="flex__header" id="comienzo">
-        <a href="../index.html"><img class="logo" src="../img/logo.png" alt=""></a>
-        <nav> 
-            <ul class="option">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./tratamientos.html">Tratamientos</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./ubicacion.html">Ubicaciòn</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+        <a href="../index.html"><img class="logo" src="../img/logo2.jpg" alt=""></a>
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#opciones" type="button" name="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="opciones">
+                <ul class="option">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./tratamientos.html">Tratamientos</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./ubicacion.html">Ubicaciòn</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main class="flex__tratamientos">
-
     </main>
-    <footer class="flex__footer">  
+    <footer class="navbar navbar-expand-lg navbar-dark flex__footer">
+        <!-- Footer donde estan ubicadas las rr.ss, ubicacion con mapa y direccionamiento a la seccion de ubicacion y enlace para ir al inicio de la pagina -->
         <section>
-            <a href="../index.html"><img class="logo logo__footer" src="../img/logo.png" alt=""></a>
+            <a href="../index.html"><img class="logo logo__footer" src="../img/logo2.jpg" alt=""></a>
             <ul>
-            <a href="./ubicacion.html"><img class="mapa" src="../img/mapa.png" alt=""></a>
+                <a href="./ubicacion.html"><img class="mapa" src="../img/mapa.png" alt=""></a>
                 <div>
-                    <li>Guardia Vieja 3948</li>
-                    <li> C1192AAN - CABA - Argentina</li>
+                    <li class="dire">Azcuénaga 18</li>
+                    <li>C1029AAB - CABA</li>
                 </div>
             </ul>
             <div>
-                <a class= "arriba" href="#comienzo">Ir arriba</a>
-                <a href="https://es-la.facebook.com/login/device-based/regular/login/" target="_blank"><img class="rrss" src="../img/facebook.png" alt=""></a>
-                <a href="https://www.instagram.com/" target="_blank"><img class="rrss" src="../img/instagram.png" alt=""></a>
-                <a href="https://web.whatsapp.com/" target="_blank"><img class="rrss" src="../img/whatsapp.png" alt=""></a>
+                <a class="arriba" href="#comienzo">Ir arriba</a>
+                <div class="collapse navbar-collapse" id="rrss">
+                    <a href="https://es-la.facebook.com/login/device-based/regular/login/" target="_blank"><img class="rrss" src="../img/facebook.png" alt=""></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img class="rrss" src="../img/instagram.png" alt=""></a>
+                    <a href="https://web.whatsapp.com/" target="_blank"><img class="rrss" src="../img/whatsapp.png" alt=""></a>
+                </div>
             </div>
-        </section>              
+            <button class="navbar-toggler redes" data-bs-toggle="collapse" data-bs-target="#rrss" type="button" name="button">
+                <span><img src="../img/redes.jpg" alt=""></span>
+            </button>
+        </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

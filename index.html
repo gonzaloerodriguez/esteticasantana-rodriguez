@@ -4,33 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel= "icon" type="image.png" href="./img/logo.png">
+    <link rel="icon" type="image.png" href="./img/logo2.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Estètica Santana</title>
 </head>
-<body class="font"> 
+<body class="font">
     <header class="flex__header" id="comienzo">
         <!-- Barra de navegacion con logo linkeado al index al igual que en todas las paginas -->
-        <a href="./index.html"><img class="logo" src="./img/logo.png" alt=""></a>
-        <nav> 
-            <ul class="option">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/tratamientos.html">Tratamientos</a></li>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./pages/ubicacion.html">Ubicaciòn</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
+        <a href="./index.html"><img class="logo" src="./img/logo2.jpg" alt=""></a>
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#opciones" type="button" name="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="opciones">
+                <ul class="option">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./pages/tratamientos.html">Tratamientos</a></li>
+                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="./pages/ubicacion.html">Ubicaciòn</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <main class="main__index"> 
+    <main class="main__index">
         <!-- Una breve introduccion de quienes somos y que hacemos-->
         <section class="hero">
             <h1>Estètica por mèdicos</h1>
-                <p>La estètica es sinònimo de salud por eso no dejes tus tratamientos en manos de cualquiera. Te ofrecemos la mejor atenciòn de la mano de la Dra. Santana. No esperes màs! Solicità tu turno aquì!
-                </p>
-                <a href="./pages/contacto.html">Reservar</a>
+            <p>La estètica es sinònimo de salud por eso no dejes tus tratamientos en manos de cualquiera. Te ofrecemos
+                la mejor atenciòn de la mano de la Dra. Santana. No esperes màs! Solicità tu turno aquì!
+            </p>
+            <a href="./pages/contacto.html">Reservar</a>
         </section>
-        <!-- Division global de los tratamientos que se realizan -->
+        <!-- Division global de los tratamientos que se realizan 
         <section class="index__tipos__de__tratamientos">
             <div>
                 <h2>Estètica corporal</h2>
@@ -46,27 +53,79 @@
                 <h2>Tratamientos capilares</h2>
                 <a href="./pages/tratamientoscapilares.html"><img src="./img/capilarinicio.jpg" alt="">
                 <button><a href="./pages/tratamientoscapilares.html">Info</a></button></a>
+            </div> -->
+        <!-- Prueba de como queda el caroussel-->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="./pages/tratamientoscorporales.html"><img src="./img/corporal.jpg" class="d-block w-100"
+                            alt="..."></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Tratamientos corporales</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="./pages/tratamientosfaciales.html"><img src="./img/facialnueva.jpg" class="d-block w-100"
+                            alt="..."></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Tratamientos faciales</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="./pages/tratamientoscapilares.html"><img src="./img/capilarinicio.jpg"
+                            class="d-block w-100" alt="..."></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Tratamientos capilares</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
         </section>
     </main>
-    <footer class="flex__footer">      
-        <!-- Footer donde estan ubicadas las rr.ss, ubicacion con mapa y direccionamiento a la seccion de ubicacion y enlace para ir al inicio de la pagina --> 
+    <footer class="navbar navbar-expand-lg navbar-dark flex__footer">
+        <!-- Footer donde estan ubicadas las rr.ss, ubicacion con mapa y direccionamiento a la seccion de ubicacion y enlace para ir al inicio de la pagina -->
         <section>
-            <a href="./index.html"><img class="logo logo__footer" src="./img/logo.png" alt=""></a>
+            <a href="./index.html"><img class="logo logo__footer" src="./img/logo2.jpg" alt=""></a>
             <ul>
                 <a href="./pages/ubicacion.html"><img class="mapa" src="./img/mapa.png" alt=""></a>
                 <div>
-                    <li>Guardia Vieja 3948</li>
-                    <li> C1192AAN - CABA - Argentina</li=>
+                    <li class="dire">Azcuénaga 18</li>
+                    <li>C1029AAB - CABA</li>
                 </div>
             </ul>
             <div>
-                <a class= "arriba" href="#comienzo">Ir arriba</a>
-                <a href="https://es-la.facebook.com/login/device-based/regular/login/" target="_blank"><img class="rrss" src="./img/facebook.png" alt=""></a>
-                <a href="https://www.instagram.com/" target="_blank"><img class="rrss" src="./img/instagram.png" alt=""></a>
-                <a href="https://web.whatsapp.com/" target="_blank"><img class="rrss" src="./img/whatsapp.png" alt=""></a>
+                <a class="arriba" href="#comienzo">Ir arriba</a>
+                <div class="collapse navbar-collapse" id="rrss">
+                    <a href="https://es-la.facebook.com/login/device-based/regular/login/" target="_blank"><img class="rrss" src="./img/facebook.png" alt=""></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img class="rrss" src="./img/instagram.png" alt=""></a>
+                    <a href="https://web.whatsapp.com/" target="_blank"><img class="rrss" src="./img/whatsapp.png" alt=""></a>
+                </div>
             </div>
-        </section>         
+            <button class="navbar-toggler redes" data-bs-toggle="collapse" data-bs-target="#rrss" type="button" name="button">
+                <span><img src="./img/redes.jpg" alt=""></span>
+            </button>
+        </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 </html>
