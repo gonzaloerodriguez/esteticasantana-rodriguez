@@ -1,0 +1,46 @@
+// HEADER 
+
+.flex__header {
+    background-color: #f9b9b785;
+    width: 100%;
+    opacity: 0.8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+        .logo {
+            width:  10rem; 
+            height: 8rem;
+        }
+    }
+    .navbar {
+        flex-direction: row-reverse;
+        .navbar-toggler {
+            background-color: #ff80f4;
+            border-color: #000;
+            margin-right: 0.5rem;
+        }
+        div {   
+            .option {
+                list-style: none;
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    padding-right: 16px;
+                    a {
+                        text-decoration: none;
+                        font-size: 25px;
+                        color: black;
+                        transition: 0.3s;
+                        &:hover {
+                            color: #fd8682e5;
+                        }
+                        &:active {
+                            color: #fd8682e5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
