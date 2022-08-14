@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
 .font {
-  font-family: 'Dancing Script', normal; }
+  font-family: 'Dancing Script'; }
 
 * {
   margin: 0;
@@ -19,7 +20,7 @@
   .flex__header .navbar {
     flex-direction: row-reverse; }
     .flex__header .navbar .navbar-toggler {
-      background-color: #ff80f4;
+      background-color: #f9b9b7;
       border-color: #000;
       margin-right: 0.5rem; }
     .flex__header .navbar div .option {
@@ -38,7 +39,7 @@
           .flex__header .navbar div .option li a:active {
             color: #fd8682e5; }
 
-.hero {
+.main__index .hero, .hero__tratamientos .flex__tratamientos, .hero, .hero__ubicacion, main .hero__contacto {
   width: 100%;
   height: 80vh;
   background: url(../img/back.png);
@@ -51,155 +52,258 @@
   justify-content: center;
   align-content: center; }
 
+.main__index {
+  background-color: #f9b9b7bb; }
+  .main__index .hero h1 {
+    height: 17%;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 20px;
+    color: black; }
+  .main__index .hero p {
+    text-align: center;
+    font-size: 30px;
+    height: 45%; }
+  .main__index .hero a {
+    text-decoration: none;
+    color: black;
+    border: solid;
+    border-radius: 5px;
+    border-color: #f9b9b785;
+    text-align: center;
+    background-color: #f9b9b7;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 30px;
+    box-shadow: 3px 3px rgba(252, 240, 240, 0.384); }
+    .main__index .hero a:hover {
+      transform: scale(1.1);
+      color: black;
+      background-color: #fd86822d; }
+    .main__index .hero a:active {
+      color: #f9b9b7;
+      background-color: black; }
+  .main__index .section__carousel {
+    border: solid rgba(0, 139, 139, 0.205); }
+    .main__index .section__carousel .carousel {
+      width: 50%;
+      margin-left: 25%; }
+      .main__index .section__carousel .carousel .carousel-inner .carousel-item a img {
+        height: 280px;
+        width: 70px;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        border-radius: 15px; }
+      .main__index .section__carousel .carousel .carousel-inner .carousel-item div h5 {
+        color: #ff80f4;
+        font-size: 2rem; }
+
+.hero__tratamientos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; }
+  .hero__tratamientos .flex__tratamientos {
+    height: 100%; }
+    .hero__tratamientos .flex__tratamientos .container div .nt {
+      width: auto; }
+      .hero__tratamientos .flex__tratamientos .container div .nt h2 {
+        color: darkcyan; }
+    .hero__tratamientos .flex__tratamientos .container div .cards {
+      width: auto;
+      height: auto;
+      padding: 10px;
+      text-align: center;
+      border: 1px solid darkcyan;
+      border-radius: 10px;
+      margin: 50px;
+      margin-bottom: 2%;
+      background-color: #f9b9b76b;
+      color: darkcyan;
+      display: flex;
+      flex-direction: column;
+      transition: 3s;
+      box-shadow: 5px 5px rgba(0, 0, 0, 0.082); }
+      .hero__tratamientos .flex__tratamientos .container div .cards:hover {
+        transform: scale(1.1); }
+      .hero__tratamientos .flex__tratamientos .container div .cards a img {
+        width: 180px;
+        height: 150px;
+        padding: 10px;
+        border-radius: 50px; }
+      .hero__tratamientos .flex__tratamientos .container div .cards .boton {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2px;
+        border-radius: 5px;
+        background-color: darkcyan;
+        text-decoration: none;
+        color: white;
+        border: solid 3px black; }
+        .hero__tratamientos .flex__tratamientos .container div .cards .boton:active {
+          background-color: rgba(233, 219, 219, 0.849);
+          color: black; }
+
+.hero__ubicacion {
+  justify-content: flex-start; }
+  .hero__ubicacion div .section__ubicacion {
+    display: flex;
+    flex-direction: column;
+    margin: 5%; }
+    .hero__ubicacion div .section__ubicacion h2 {
+      margin-bottom: 10px;
+      color: darkcyan; }
+
+main .hero__contacto {
+  height: max-content; }
+  main .hero__contacto form .form-floating {
+    width: 150%; }
+  main .hero__contacto form div .send {
+    color: black;
+    border-color: #f9b9b785;
+    background-color: #f9b9b7; }
+
 .flex__footer {
   display: block;
   background-color: #f9b9b785; }
-  .flex__footer section {
+  .flex__footer div {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    .flex__footer section a .logo {
+    .flex__footer div a .logo {
       width: 10rem;
       height: 8rem; }
-    .flex__footer section ul {
+    .flex__footer div ul {
       list-style: none;
       display: flex; }
-      .flex__footer section ul a .mapa {
+      .flex__footer div ul li a .mapa {
         width: 6rem;
         height: 6rem; }
-      .flex__footer section ul div {
+      .flex__footer div ul div {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
         font-style: normal;
         font-size: 120%; }
-        .flex__footer section ul div .dire {
+        .flex__footer div ul div .dire {
           font-size: 150%; }
-    .flex__footer section div {
+    .flex__footer div div {
       display: flex;
       flex-wrap: wrap;
       align-items: center; }
-      .flex__footer section div .arriba {
+      .flex__footer div div .arriba {
         transition: 0.3s;
         font-size: 120%;
         text-decoration: none;
         color: #000; }
-        .flex__footer section div .arriba:hover {
+        .flex__footer div div .arriba:hover {
           color: #fd8682e5; }
-      .flex__footer section div div a {
+      .flex__footer div div div a {
         text-decoration: none;
         color: #000;
         margin-right: 16px; }
-        .flex__footer section div div a .rrss {
+        .flex__footer div div div a .rrss {
           width: 5rem;
           height: 5rem; }
-    .flex__footer section .navbar-toggler, .flex__footer section .redes {
+    .flex__footer div .navbar-toggler, .flex__footer div .redes {
       background-color: #ff80f4;
       border-color: #000;
       margin-right: 0.5rem;
       background-color: #f9b9b723; }
 
 /*----------- MEDIA QUERIES---------------*/
-@media screen and (max-width: 930px) {
-  .placeholder {
-    display: none; } }
-
-@media screen and (max-width: 895px) {
-  .hero h1 {
+@media screen and (max-width: 945px) {
+  .font {
+    font-family: 'Kalam'; }
+  .main__index .hero h1 {
     letter-spacing: 20px;
     height: 15%;
-    color: black; }
+    color: black;
+    font-size: 25px; }
+  .main__index .hero p {
+    font-size: 18px; }
+  .flex__footer div ul div {
+    display: none; }
+  .flex__footer div div div a .rrss {
+    width: 3.5em;
+    height: 3.5em; } }
+
+@media screen and (max-width: 895px) {
+  .main__index .hero a {
+    font-size: 20px; }
   .hero__contacto {
     height: max-content; }
-  .main__index section div {
-    margin-left: 2%;
-    margin-top: 2%; }
-  .index__tipos__de__tratamientos {
-    justify-content: center; }
-  .flex__footer section ul div {
-    display: none; }
-  .hero p {
-    margin-top: 5%; }
-  .section__ubicacion iframe {
-    width: 500px;
-    height: 350px; }
-  .flex__footer section div {
-    flex-direction: column;
-    align-items: stretch; }
-  .flex__footer section div a {
-    margin-bottom: 5%; }
-  .rrss {
-    width: 5rem;
-    height: 5rem; }
-  .flex__footer section {
+  .flex__footer div {
     justify-content: space-around; }
-  .placeholder {
-    display: none; } }
+    .flex__footer div div {
+      flex-direction: column;
+      align-items: stretch; }
+      .flex__footer div div a {
+        margin-bottom: 5%; }
+      .flex__footer div div div a .rrss {
+        width: 3em;
+        height: 3em; }
+  .hero__ubicacion div .section__ubicacion iframe {
+    width: 500px;
+    height: 350px; } }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 545px) {
   .logo {
     width: 6rem;
     height: 5rem; }
-  .placeholder {
-    display: none; }
-  .option li a {
+  body .flex__header nav div .option li a {
     font-size: 18px; }
-  .hero p {
-    margin-top: 10%;
-    font-size: 25px; }
-  .hero h1 {
-    letter-spacing: 15px;
-    height: 13%;
+  .main__index .hero h1 {
+    letter-spacing: 20px;
+    height: 15%;
     color: black;
-    margin-bottom: 10%;
-    font-size: 35px; }
-  .hero a {
     font-size: 20px; }
-  .flex__tratamientos h2 {
+  .main__index .hero p {
+    font-size: 15px; }
+  .hero__tratamientos .flex__tratamientos .container div div h2 {
     letter-spacing: 10px;
     font-size: 20px; }
-  .section__ubicacion iframe {
+  .hero__ubicacion div .section__ubicacion iframe {
     width: 350px;
     height: 250px; }
-  .flex__footer section {
+  main .hero__contacto form .form-floating {
+    width: auto; }
+  .flex__footer div {
     display: flex;
     flex-direction: column; }
-  .flex__footer section div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 80%;
-    align-items: center;
-    margin-top: 5%; }
-  .logo__footer {
-    width: 18rem;
-    height: 14rem; }
-  .flex__footer section ul div {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center; }
-  .flex__footer section ul {
-    margin-top: 5%; } }
+    .flex__footer div a .logo__footer {
+      width: 18rem;
+      height: 14rem; }
+    .flex__footer div ul {
+      margin-top: 5%; }
+      .flex__footer div ul div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center; }
+    .flex__footer div div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 80%;
+      align-items: center;
+      margin-top: 5%; } }
 
 @media screen and (max-width: 376px) {
-  .option li a {
+  body .flex__header nav div .option li a {
     font-size: 13px; }
-  .hero h1 {
+  .main__index .hero h1 {
     letter-spacing: 10px;
     height: 8%;
     color: black;
-    font-size: 30px; }
-  .hero p {
-    font-size: 20px; }
-  .flex__tratamientos h2 {
+    font-size: 16px; }
+  .main__index .hero p {
+    font-size: 13px; }
+  .hero__tratamientos .flex__tratamientos .container div div h2 {
     letter-spacing: 8px;
     font-size: 18px; }
-  .section__ubicacion iframe {
+  .hero__ubicacion div .section__ubicacion iframe {
     width: 250px;
-    height: 250px; }
-  .datos {
-    display: none; }
-  .placeholder {
-    display: flex; } }
+    height: 250px; } }

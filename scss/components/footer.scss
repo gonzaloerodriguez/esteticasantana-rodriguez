@@ -1,12 +1,11 @@
 // FOOTER
+@import "../base/mixins";
 
 .flex__footer {
     display: block;
     background-color: #f9b9b785;
-    section {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    div {
+        @include display-f (flex, space-between, center);
         a {
             .logo {
                 width:  10rem; 
@@ -16,10 +15,12 @@
         ul {
             list-style: none;
             display: flex;
-            a {
-                .mapa {
-                    width: 6rem;
-                    height: 6rem;
+            li {
+                a {
+                    .mapa {
+                        width: 6rem;
+                        height: 6rem;
+                    }
                 }
             }
             div {

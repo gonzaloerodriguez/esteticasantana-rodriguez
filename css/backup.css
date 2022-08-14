@@ -48,9 +48,9 @@
   width:  10rem; 
   height: 8rem;
 }
-
+ 
 .navbar-toggler{
-  background-color: #ff80f4;
+  background-color: #f9b9b7;
   border-color: #000;
   margin-right: 0.5rem;
 }
@@ -128,59 +128,6 @@
 
 .main__index {
   background-color: #f9b9b7bb;
-}
-
-.main__index button{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 2px;
-  border-radius: 5px;
-}
-
-.main__index img {
-  width: 180px;
-  height: 150px;
-  padding: 10px;
-  border-radius: 50px;
-}
-
-.main__index section div {
-  width: auto;
-  height: auto;
-  padding: 10px;
-  text-align: center;
-  border: 1px solid darkcyan; 
-  border-radius: 10px;
-  margin: 0px;
-  background-color: #f9b9b76b;
-  transition: 3s;
-  box-shadow: 5px 5px rgba(0, 0, 0, 0.082);
-}
-
-@media (hover: hover) {
-.main__index section div:hover {
-  transform: scale(1.1);
-}
-
-}
-
-.index__tipos__de__tratamientos {
-  background-color: #96c9dc46;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.index__tipos__de__tratamientos div button:active {
-  background-color: rgba(233, 219, 219, 0.849);
-}
-
-.index__tipos__de__tratamientos div button a:active {
-  color: #003c52;
-  font-weight: bold;
-
 }
 
 .carousel {
@@ -275,17 +222,13 @@
   width: auto;
 }
 
-.card {
-  margin-bottom: 13.6%;
-}
-
 h2 {
   color:darkcyan;
 }
 
-section div button {
+/* section div button {
   background-color: darkcyan;
-}
+} 
 
 section div button a{
   color: white;
@@ -315,19 +258,19 @@ section div button a{
   background-color: rgba(233, 219, 219, 0.849);
   color: #003c52;
   font-weight: bold;
-}
+} */
 
 
-main ul li  button{
+/* main ul li  button{
   color: white;
   background-color: darkcyan;
 }
 
 main ul li h3 {
   text-decoration-style: none;
-}
+} */
 
-.section__ubicacion {
+/* .section__ubicacion {
   display: flex;
   flex-direction: column;
   margin: 5%;
@@ -335,11 +278,11 @@ main ul li h3 {
 
 .section__ubicacion h2 {
   margin-bottom: 10px;
-}
+} */
 
-.hero__ubicacion {
+/* .hero__ubicacion {
   justify-content: flex-start;
-}
+} */
 
 .hero__contacto {
   height: max-content;

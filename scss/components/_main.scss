@@ -1,17 +1,186 @@
 // MAIN'S
+@import "../base/maps";
+@import "../base/extend";
+// INDEX
+
+.main__index {
+    background-color: #f9b9b7bb;
+    .hero {
+        @extend %hero;
+        h1 {
+            height: 17%;
+            font-size: map-get($descriptions, text-size-h);
+            font-weight: bold;
+            font-style: italic;
+            text-align:center;
+            letter-spacing: 20px;
+            color: black;
+        }
+        p {
+            text-align: map-get($descriptions, text);
+            font-size: 30px;
+            height: 45%;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            border: solid;
+            border-radius: 5px;
+            border-color:  #f9b9b785;
+            text-align: center;
+            background-color:  #f9b9b7;
+            padding: 10px;
+            transition: 0.3s;
+            font-size: 30px;
+            box-shadow: 3px 3px rgba(252, 240, 240, 0.384);
+            &:hover {
+                transform: scale(1.1);
+                color: black;
+                background-color: #fd86822d;
+            }
+            &:active {
+                color: #f9b9b7;
+                background-color: black;
+            }
+        }
+    }
+    .section__carousel {
+        border: solid rgba(0, 139, 139, 0.205);
+        .carousel {
+            width: 50%;
+            margin-left: 25%;
+            .carousel-inner {
+                .carousel-item {
+                    a {
+                        img {
+                            height: 280px;
+                            width: 70px;
+                            padding-top: 1%;
+                            padding-bottom: 1%;
+                            border-radius: 15px;
+                        }
+                    }
+                    div {
+                        h5 {
+                            color: #ff80f4;
+                            font-size: 2rem;
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
+}
+
+// TRATAMIENTOS
+
+.hero__tratamientos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .flex__tratamientos {
+        @extend %hero;
+        height: 100%;
+        .container {
+            div {
+                .nt {
+                    width: auto;
+                    h2 {
+                        color:darkcyan;
+                    }
+                }
+            }
+            div {
+                .cards {
+                    width: auto;
+                    height: auto;
+                    padding: 10px;
+                    text-align: center;
+                    border: 1px solid darkcyan; 
+                    border-radius: 10px;
+                    margin: 50px;
+                    margin-bottom: 2%;
+                    background-color: #f9b9b76b;
+                    color: darkcyan;
+                    display: flex;
+                    flex-direction: column;
+                    transition: 3s;
+                    box-shadow: 5px 5px rgba(0, 0, 0, 0.082);
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                    a {
+                        img {
+                            width: 180px;
+                            height: 150px;
+                            padding: 10px;
+                            border-radius: 50px;
+                        }
+                    }
+                    .boton {
+                        margin-left: auto;
+                        margin-right: auto;
+                        padding: 2px;
+                        border-radius: 5px;
+                        background-color: darkcyan;
+                        text-decoration: none;
+                        color: white;
+                        border: solid 3px black;
+                        &:active {
+                            background-color: rgba(233, 219, 219, 0.849);
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 // NOSOTROS 
 
 .hero {
-    width: 100%;
-    height: 80vh;
-    background: url(../img/back.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+    @extend %hero;
+}
+
+// UBICACION
+
+.hero__ubicacion {
+    @extend %hero;
+    justify-content: flex-start;
+    div {
+        .section__ubicacion {
+            display: flex;
+            flex-direction: column;
+            margin: 5%;
+            h2 {
+                margin-bottom: 10px;
+                color:darkcyan;
+            }
+        }
+    }
+}
+
+// CONTACTO
+
+main {
+    .hero__contacto {
+        @extend %hero;
+        height: max-content;
+        form {
+            .form-floating {
+                width: 150%;
+            }
+            div {
+                .send{
+                    color: black;
+                    border-color:  #f9b9b785;
+                    background-color:  #f9b9b7;
+                }
+            }
+        }
+    
+    }
 }

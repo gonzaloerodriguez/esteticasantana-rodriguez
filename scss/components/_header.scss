@@ -1,12 +1,11 @@
 // HEADER 
+@import "../base/mixins";
 
 .flex__header {
     background-color: #f9b9b785;
     width: 100%;
     opacity: 0.8;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include display-f (flex, space-between, center);
     a {
         .logo {
             width:  10rem; 
@@ -16,7 +15,7 @@
     .navbar {
         flex-direction: row-reverse;
         .navbar-toggler {
-            background-color: #ff80f4;
+            background-color: #f9b9b7;
             border-color: #000;
             margin-right: 0.5rem;
         }
@@ -44,3 +43,4 @@
         }
     }
 }
+
