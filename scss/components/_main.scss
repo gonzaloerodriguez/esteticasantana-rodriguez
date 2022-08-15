@@ -60,12 +60,12 @@
                             border-radius: 15px;
                         }
                     }
-                    div {
-                        h5 {
-                            color: #ff80f4;
-                            font-size: 2rem;
-                        }
-                    }
+                    // div {
+                    //     h5 {
+                    //         color: #ff80f4;
+                    //         font-size: 2rem;
+                    //     }
+                    // } (lo comento porque todavia no estoy seguro de sarcarlo)
     
                 }
             }
@@ -138,6 +138,40 @@
     }
 }
 
+// MAIN ESPECIFICO DE LAS PAGINAS DE LOS TRATAMIENTOS
+
+.tratamientosmedicos__main {
+    
+    .tratamientos__medicosdiv {
+        @include display-f (flex, space-between, center);
+        flex-direction: column;
+        .tratamientos__medicosh1 {
+            margin-top: 2%;
+        }
+        .tratamientos__medicosp {
+            text-align: map-get($descriptions, text);
+            font-size: 30px;        
+            margin-bottom: 0%;
+        }
+        .tratamientos__medicosh2 {
+            @include display-f (flex, space-between, center);
+            align-self: flex-start;
+            color: black;
+        }
+        .tratamientos__medicosul {
+            margin-bottom: 10%;
+            @include display-f (flex, space-between, start);
+            align-self: flex-start;
+            flex-direction: column;
+            list-style: none;
+            padding: 0%;
+            li {
+                font-size: 20px;
+            }
+        }
+
+    }
+}
 
 // NOSOTROS 
 

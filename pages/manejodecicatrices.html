@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- A partir de aca agregue los meta para el SEO -->
     <meta name="description" content="Estética por médicos es dejar tu belleza en manos de doctores especializados en dicha área. No te dejes para después entrá y mirá nuestros tratamientos. Agendá tu turno ya mismo!">
     <meta name="keywords" content=" baby botox, botox en la cara, estetica, medicina estetica, tratamientos esteticos, peeling, peeling medico, cicatrices, adiposidad localizada, acido hialuronico, mesoterapia, mesoterapia capilar, mesoterapia corporal, plasma, plasma rico en plaquetas, skin booster, microneedling, dermapen">
     <meta property="og:type" content="Web site">
@@ -12,14 +13,16 @@
     <meta property="og:image" content="">
     <meta property="og:description" content="Estética por médicos es dejar tu belleza en manos de doctores especializados en dicha área. No te dejes para después entrá y mirá nuestros tratamientos. Agendá tu turno ya mismo!">
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <!-- Link de bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/backup.css">
     <title>Estètica Santana</title>
 </head>
 <body class="font"> 
+    <!-- Aplicacion de las clases necesarias para que la barra de navegacion se agrupen en un boton cuando la pantalla se achique -->
     <header class="flex__header" id="comienzo">
-        <a href="../index.html"><img class="logo" src="../img/logo2.jpg" title= "Logo Estética Santana" alt="Logo Estetica Santana">></a>
+        <a href="../index.html"><img class="logo" src="../img/logo2.jpg" title= "Logo Estética Santana" alt="Logo Estetica Santana"></a>
         <nav class="navbar navbar-expand-md navbar-dark">
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#opciones" type="button" name="button">
                 <span class="navbar-toggler-icon"></span>
@@ -35,16 +38,31 @@
             </div>
         </nav>
     </header>
-    <main class="flex__tratamientos"> 
-
+    <main class="flex__tratamientos tratamientosmedicos__main">
+        <!-- Breve explicacion de en que consiste el tratamiento --> 
+        <div class="container-fluid tratamientos__medicosdiv">
+            <h1 class="tratamientos__medicosh1">Peeling médico </h1>
+            <p class="tratamientos__medicosp"> 
+                Es un procedimiento que consiste en remover células muertas, estimula la formulación de colágeno, elimina manchas ocasionadas por el sol, tensa la piel, borra arrugas, da brillo y luminosidad a la piel. Con dirección de hasta 6 meses.
+            </p>
+            <h2 class="tratamientos__medicosh2">Tipos de peeling</h2>
+            <ul class="tratamientos__medicosul">
+                <li>Facial</li>
+                <li>Corporal</li>
+                <li>Superficial</li>
+                <li>Medio</li>
+                <li>Profundo</li>
+            </ul>
+        </div>
     </main>
+    <!-- Aplicacion de las clases de bootstrap para que las rrss se agrupen en un boton cuando la pantalla se achique -->
     <footer class="navbar navbar-expand-lg navbar-dark flex__footer">
         <!-- Footer donde estan ubicadas las rr.ss, ubicacion con mapa y direccionamiento a la seccion de ubicacion y enlace para ir al inicio de la pagina -->
         <div>
-            <a href="../index.html"><img class="logo logo__footer" src="../img/logo2.jpg" title= "Logo Estética Santana" alt="Logo Estetica Santana">></a>
+            <a href="../index.html"><img class="logo logo__footer" src="../img/logo2.jpg" title= "Logo Estética Santana" alt="Logo Estetica Santana"></a>
             <ul>
                 <li>
-                    <a href="./ubicacion.html"><img class="mapa" src="../img/mapa.png" title= "Nuestra ubicación" alt="Nuestra ubicación">></a>
+                    <a href="./ubicacion.html"><img class="mapa" src="../img/mapa.png" title= "Nuestra ubicación" alt="Nuestra ubicación"></a>
                 </li>
                 <div>
                     <li class="dire">Azcuénaga 18</li>
@@ -64,6 +82,7 @@
             </button>
         </div>
     </footer>
+    <!-- Link de bootstrap Js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
