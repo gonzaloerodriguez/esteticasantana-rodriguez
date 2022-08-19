@@ -6,8 +6,6 @@
 
 .main__index {
     background-color: #f9b9b7bb;
-    position: absolute;
-    z-index: 1;
     .hero {
         @extend %hero;
         h1 {

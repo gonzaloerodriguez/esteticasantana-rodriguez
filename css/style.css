@@ -18,9 +18,7 @@
     width: 10rem;
     height: 8rem; }
   .flex__header .navbar {
-    flex-direction: row-reverse;
-    position: relative;
-    z-index: 2; }
+    flex-direction: row-reverse; }
     .flex__header .navbar .navbar-toggler {
       background-color: #f9b9b7;
       border-color: #000;
@@ -55,9 +53,7 @@
   align-content: center; }
 
 .main__index {
-  background-color: #f9b9b7bb;
-  position: absolute;
-  z-index: 1; }
+  background-color: #f9b9b7bb; }
   .main__index .hero h1 {
     height: 17%;
     font-size: 40px;
