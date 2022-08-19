@@ -1,8 +1,9 @@
 // HEADER 
 @import "../base/mixins";
+@import "../base/variables";
 
 .flex__header {
-    background-color: #f9b9b785;
+    background-color: $color-header-footer;
     width: 100%;
     opacity: 0.8;
     @include display-f (flex, space-between, center);
@@ -14,12 +15,14 @@
     }
     .navbar {
         flex-direction: row-reverse;
+        position: relative;
+        z-index: 2;
         .navbar-toggler {
             background-color: #f9b9b7;
             border-color: #000;
             margin-right: 0.5rem;
         }
-        div {   
+        div {
             .option {
                 list-style: none;
                 display: flex;

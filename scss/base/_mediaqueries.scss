@@ -1,5 +1,3 @@
-/*----------- MEDIA QUERIES---------------*/
-
 @media  screen and (max-width:945px) {
 
     .font {
@@ -18,6 +16,29 @@
                 font-size: 18px;
             }
             
+        }
+    }
+
+    .hero {
+        div {
+            p {
+                text-align: center;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .tratamientosmedicos__main {
+        .tratamientos__medicosdiv {
+            .tratamientos__box {
+                .tratamientos__medicosh1 {
+                    font-size: 30px;
+                }
+                .tratamientos__medicosp {
+                    font-size: 18px;
+                }   
+            }
+
         }
     }
 
@@ -57,6 +78,20 @@
 
     .hero__contacto {
         height: max-content;
+    }
+
+    .tratamientosmedicos__main {
+        .tratamientos__medicosdiv {
+            .tratamientos__box {
+                .tratamientos__medicosh1 {
+                    font-size: 20px;
+                }
+                .tratamientos__medicosp {
+                    font-size: 15px;
+                }   
+            }
+
+        }
     }
     
     .flex__footer {
@@ -131,6 +166,20 @@
                 font-size: 15px;
             }
             
+        }
+    }
+
+    .tratamientosmedicos__main {
+        .tratamientos__medicosdiv {
+            .tratamientos__box {
+                .tratamientos__medicosh1 {
+                    font-size: 15px;
+                }
+                .tratamientos__medicosp {
+                    font-size: 13px;
+                }   
+            }
+
         }
     }
     

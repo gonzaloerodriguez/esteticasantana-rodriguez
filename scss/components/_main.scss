@@ -1,10 +1,13 @@
-// MAIN'S
 @import "../base/maps";
 @import "../base/extend";
+@import "../base/mixins";
+
 // INDEX
 
 .main__index {
     background-color: #f9b9b7bb;
+    position: absolute;
+    z-index: 1;
     .hero {
         @extend %hero;
         h1 {
@@ -14,7 +17,7 @@
             font-style: italic;
             text-align:center;
             letter-spacing: 20px;
-            color: black;
+            color: $color-h1;
         }
         p {
             text-align: map-get($descriptions, text);
@@ -59,14 +62,7 @@
                             padding-bottom: 1%;
                             border-radius: 15px;
                         }
-                    }
-                    // div {
-                    //     h5 {
-                    //         color: #ff80f4;
-                    //         font-size: 2rem;
-                    //     }
-                    // } (lo comento porque todavia no estoy seguro de sarcarlo)
-    
+                    }    
                 }
             }
         }
@@ -141,35 +137,50 @@
 // MAIN ESPECIFICO DE LAS PAGINAS DE LOS TRATAMIENTOS
 
 .tratamientosmedicos__main {
-    
-    .tratamientos__medicosdiv {
-        @include display-f (flex, space-between, center);
-        flex-direction: column;
-        .tratamientos__medicosh1 {
-            margin-top: 2%;
-        }
-        .tratamientos__medicosp {
-            text-align: map-get($descriptions, text);
-            font-size: 30px;        
-            margin-bottom: 0%;
-        }
-        .tratamientos__medicosh2 {
-            @include display-f (flex, space-between, center);
-            align-self: flex-start;
-            color: black;
-        }
-        .tratamientos__medicosul {
-            margin-bottom: 10%;
-            @include display-f (flex, space-between, start);
-            align-self: flex-start;
-            flex-direction: column;
-            list-style: none;
-            padding: 0%;
-            li {
-                font-size: 20px;
+    @extend %hero;
+    height: 100%;
+        .tratamientos__medicosdiv {
+             @include display-f (flex, center, center);
+             flex-direction: column;
+            .tratamientos__box {
+                @include display-f (flex, center, center);
+                flex-direction: column;
+                border: 1px solid darkcyan;
+                width: 70%;
+                margin-top: 2%;
+                background-color: #f9b9b76b;
+                padding: 1%;
+                margin-bottom: 2%;
+                .tratamientos__medicosp {
+                    text-align: map-get($descriptions, text);
+                    font-size: 30px;        
+                    margin-bottom: 0%;
+                }
             }
-        }
-
+            .beneficios__box {
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                border: 1px solid darkcyan;
+                background-color: #f9b9b76b;
+                margin-bottom: 2%;
+                padding: 1%;
+                .tratamientos__medicosh2 {
+                    @include display-f (flex, center, center);
+                    color: black;
+                }
+                .tratamientos__medicosul {
+                    // margin-bottom: 10%;
+                    @include display-f (flex, center, start);
+                    align-self: center;
+                    flex-direction: column;
+                    list-style: none;
+                    padding: 0%;
+                    li {
+                        font-size: 20px;
+                    }
+                }
+            }
     }
 }
 
@@ -177,6 +188,21 @@
 
 .hero {
     @extend %hero;
+    div {
+        @include display-f (flex, center, center);
+        .nosotros__box {
+            border: 1px solid darkcyan;
+            width: 70%;
+            margin-top: 2%;
+            background-color: #f9b9b76b;
+            padding: 1%;
+            margin-bottom: 2%;
+            p {
+                text-align: center;
+                font-size: 30px;
+            }
+        }
+    }
 }
 
 // UBICACION

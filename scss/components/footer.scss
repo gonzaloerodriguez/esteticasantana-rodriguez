@@ -1,9 +1,9 @@
-// FOOTER
 @import "../base/mixins";
+@import "../base/variables";
 
 .flex__footer {
     display: block;
-    background-color: #f9b9b785;
+    background-color: $color-header-footer;
     div {
         @include display-f (flex, space-between, center);
         a {
