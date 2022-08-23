@@ -321,9 +321,9 @@ main .hero__contacto {
   .hero__contacto {
     height: max-content; }
   .tratamientosmedicos__main .tratamientos__medicosdiv .tratamientos__box .tratamientos__medicosh1 {
-    font-size: 20px; }
+    font-size: 22px; }
   .tratamientosmedicos__main .tratamientos__medicosdiv .tratamientos__box .tratamientos__medicosp {
-    font-size: 15px; }
+    font-size: 20px; }
   .tratamientosmedicos__main .tratamientos__medicosdiv .beneficios__box .tratamientos__medicosh2 {
     font-size: 20px; }
   .tratamientosmedicos__main .tratamientos__medicosdiv .beneficios__box .tratamientos__medicosul {
@@ -347,7 +347,7 @@ main .hero__contacto {
     width: 500px;
     height: 350px; } }
 
-@media screen and (max-width: 545px) {
+@media screen and (max-width: 585px) {
   body .flex__header nav div .option li a {
     font-size: 18px; }
   .main__index .hero h1 {
@@ -365,6 +365,13 @@ main .hero__contacto {
     font-size: 15px; }
   .tratamientosmedicos__main .tratamientos__medicosdiv .beneficios__box .tratamientos__medicosul li {
     font-size: 13px; }
+  .nosotros__main .nosotros__div {
+    margin-top: 25%;
+    margin-bottom: 25%; }
+    .nosotros__main .nosotros__div .nosotros__box .nosotros__medicosh1 {
+      font-size: 20px; }
+    .nosotros__main .nosotros__div .nosotros__box .nosotros__medicosp {
+      font-size: 15px; }
   .hero__tratamientos .flex__tratamientos .container div div h2 {
     letter-spacing: 10px;
     font-size: 20px; }

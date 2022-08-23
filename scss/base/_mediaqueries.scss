@@ -111,10 +111,10 @@
         .tratamientos__medicosdiv {
             .tratamientos__box {
                 .tratamientos__medicosh1 {
-                    font-size: 20px;
+                    font-size: 22px;
                 }
                 .tratamientos__medicosp {
-                    font-size: 15px;
+                    font-size: 20px;
                 }   
             }
             .beneficios__box {
@@ -181,7 +181,7 @@
 }
  
 
-@media  screen and (max-width:545px) {
+@media  screen and (max-width:585px) {
 
     body {
         .flex__header {
@@ -239,6 +239,21 @@
         }
     }
 
+    .nosotros__main {
+        .nosotros__div{
+            margin-top: 25%;
+            margin-bottom: 25%;
+            .nosotros__box {
+                .nosotros__medicosh1 {
+                    font-size: 20px;
+                }
+                .nosotros__medicosp {
+                    font-size: 15px;
+
+                }
+            }
+        }
+    }
         
     .hero__tratamientos {
         .flex__tratamientos {
