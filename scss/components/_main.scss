@@ -168,7 +168,6 @@
                     color: black;
                 }
                 .tratamientos__medicosul {
-                    // margin-bottom: 10%;
                     @include display-f (flex, center, start);
                     align-self: center;
                     flex-direction: column;
@@ -184,20 +183,24 @@
 
 // NOSOTROS 
 
-.hero {
+.nosotros__main {
     @extend %hero;
-    div {
+    .nosotros__div{
         @include display-f (flex, center, center);
+        flex-direction: column;
+        width: 70%;
         .nosotros__box {
+            @include display-f (flex, center, center);
+            flex-direction: column;
             border: 1px solid darkcyan;
-            width: 70%;
-            margin-top: 2%;
+            margin-top: 5%;
             background-color: #f9b9b76b;
             padding: 1%;
-            margin-bottom: 2%;
-            p {
-                text-align: center;
-                font-size: 30px;
+            margin-bottom: 5%;
+            .nosotros__medicosp {
+                text-align: map-get($descriptions, text);
+                font-size: 28px;        
+                margin-bottom: 0%;
             }
         }
     }

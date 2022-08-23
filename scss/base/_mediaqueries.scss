@@ -31,14 +31,41 @@
     .tratamientosmedicos__main {
         .tratamientos__medicosdiv {
             .tratamientos__box {
+                margin-top: 10%;
+                margin-bottom: 5%;
                 .tratamientos__medicosh1 {
                     font-size: 30px;
                 }
                 .tratamientos__medicosp {
-                    font-size: 18px;
+                    font-size: 20px;
                 }   
             }
+            .beneficios__box {
+                margin-top: 5%;
+                margin-bottom: 10%;
+                .tratamientos__medicosh2 {
+                    font-size: 30px;
 
+                }
+                .tratamientos__medicosul {
+                    font-size: 20px;
+                }
+            }
+
+        }
+    }
+
+    .nosotros__main {
+        .nosotros__div{
+            margin-top: 25%;
+            margin-bottom: 25%;
+            .nosotros__box {
+              
+                .nosotros__medicosp {
+                    font-size: 20px;
+
+                }
+            }
         }
     }
 
@@ -90,10 +117,33 @@
                     font-size: 15px;
                 }   
             }
+            .beneficios__box {
+                .tratamientos__medicosh2 {
+                    font-size: 20px;
+
+                }
+                .tratamientos__medicosul {
+                    font-size: 15px;
+                }
+            }
 
         }
     }
     
+    .nosotros__main {
+        .nosotros__div{
+            margin-top: 25%;
+            margin-bottom: 25%;
+            .nosotros__box {
+              
+                .nosotros__medicosp {
+                    font-size: 18px;
+
+                }
+            }
+        }
+    }
+
     .flex__footer {
         div {
             justify-content: space-around;
@@ -133,11 +183,6 @@
 
 @media  screen and (max-width:545px) {
 
-    .logo {
-        width:  6rem; 
-        height: 5rem;
-    }
-    
     body {
         .flex__header {
             nav {
@@ -179,10 +224,22 @@
                     font-size: 13px;
                 }   
             }
+            .beneficios__box {
+                .tratamientos__medicosh2 {
+                    font-size: 15px;
+
+                }
+                .tratamientos__medicosul {
+                    li{
+                    font-size: 13px;
+                    }
+                }
+            }
 
         }
     }
-    
+
+        
     .hero__tratamientos {
         .flex__tratamientos {
             .container {
@@ -223,12 +280,6 @@
         div {
             display: flex;
             flex-direction: column;
-            a {
-                .logo__footer {
-                    width:  18rem; 
-                    height: 14rem;
-                }
-            }
             ul {
                 margin-top: 5%;
                 div {
