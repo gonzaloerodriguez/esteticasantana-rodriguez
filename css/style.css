@@ -242,6 +242,7 @@ main .hero__contacto {
       list-style: none;
       display: flex; }
       .flex__footer div ul li a .mapa {
+        border-radius: 4%;
         width: 6rem;
         height: 6rem; }
       .flex__footer div ul div {
@@ -264,18 +265,24 @@ main .hero__contacto {
         color: #000; }
         .flex__footer div div .arriba:hover {
           color: #fd8682e5; }
-      .flex__footer div div div a {
-        text-decoration: none;
-        color: #000;
-        margin-right: 16px; }
-        .flex__footer div div div a .rrss {
-          width: 5rem;
-          height: 5rem; }
+      .flex__footer div div div {
+        margin-left: 10px; }
+        .flex__footer div div div a {
+          text-decoration: none;
+          color: #000;
+          margin-right: 16px; }
+          .flex__footer div div div a .rrss {
+            border-radius: 4%;
+            width: 5rem;
+            height: 5rem; }
     .flex__footer div .navbar-toggler, .flex__footer div .redes {
       background-color: #ff80f4;
-      border-color: #000;
       margin-right: 0.5rem;
       background-color: #f9b9b723; }
+      .flex__footer div .navbar-toggler span .boton__de__redes, .flex__footer div .redes span .boton__de__redes {
+        border-radius: 4%;
+        width: 5rem;
+        height: 5rem; }
 
 @media screen and (max-width: 945px) {
   .font {
@@ -343,6 +350,9 @@ main .hero__contacto {
       .flex__footer div div div a .rrss {
         width: 3em;
         height: 3em; }
+    .flex__footer div .navbar-toggler span .boton__de__redes, .flex__footer div .redes span .boton__de__redes {
+      width: 4em;
+      height: 4em; }
   .hero__ubicacion div .section__ubicacion iframe {
     width: 500px;
     height: 350px; } }
