@@ -1,6 +1,7 @@
 // HEADER 
 @import "../base/mixins";
 @import "../base/variables";
+@import "../base/extend";
 
 .flex__header {
     background-color: $color-header-footer;
@@ -30,6 +31,7 @@
                     a {
                         text-decoration: none;
                         font-size: 25px;
+                        @extend %tipografia-parrafos;
                         color: black;
                         transition: 0.3s;
                         &:hover {

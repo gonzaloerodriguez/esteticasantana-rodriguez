@@ -11,16 +11,16 @@
         h1 {
             height: 17%;
             font-size: map-get($descriptions, text-size-h);
-            font-weight: bold;
-            font-style: italic;
             text-align:center;
             letter-spacing: 20px;
             color: $color-h1;
+            @extend %tipografia-h1;
         }
         p {
             text-align: map-get($descriptions, text);
             font-size: 30px;
             height: 45%;
+            @extend %tipografia-parrafos;
         }
         a {
             text-decoration: none;
@@ -82,6 +82,7 @@
                     width: auto;
                     h2 {
                         color:darkcyan;
+                        @extend %tipografia-subtitulos;
                     }
                 }
             }
@@ -104,6 +105,10 @@
                     &:hover {
                         transform: scale(1.1);
                     }
+                    h3 {
+                        @extend %tipografia-h3;
+                        font-size: 1.5em;
+                    }
                     a {
                         img {
                             width: 180px;
@@ -121,6 +126,7 @@
                         text-decoration: none;
                         color: white;
                         border: solid 3px black;
+                        @extend %tipografia-parrafos;
                         &:active {
                             background-color: rgba(233, 219, 219, 0.849);
                             color: black;
@@ -149,10 +155,14 @@
                 background-color: #f9b9b76b;
                 padding: 1%;
                 margin-bottom: 2%;
+                h1 {
+                    @extend %tipografia-h1;
+                }
                 .tratamientos__medicosp {
                     text-align: map-get($descriptions, text);
                     font-size: 30px;        
                     margin-bottom: 0%;
+                    @extend %tipografia-parrafos;
                 }
             }
             .beneficios__box {
@@ -166,6 +176,7 @@
                 .tratamientos__medicosh2 {
                     @include display-f (flex, center, center);
                     color: black;
+                    @extend %tipografia-subtitulos;
                 }
                 .tratamientos__medicosul {
                     @include display-f (flex, center, start);
@@ -175,6 +186,7 @@
                     padding: 0%;
                     li {
                         font-size: 20px;
+                        @extend %tipografia-parrafos;
                     }
                 }
             }
@@ -197,10 +209,14 @@
             background-color: #f9b9b76b;
             padding: 1%;
             margin-bottom: 5%;
+            h1 {
+                @extend %tipografia-h1;
+            }
             .nosotros__medicosp {
                 text-align: map-get($descriptions, text);
                 font-size: 28px;        
                 margin-bottom: 0%;
+                @extend %tipografia-parrafos;
             }
         }
     }
@@ -219,6 +235,7 @@
             h2 {
                 margin-bottom: 10px;
                 color:darkcyan;
+                @extend %tipografia-subtitulos;
             }
         }
     }
