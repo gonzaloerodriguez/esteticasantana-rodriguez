@@ -201,51 +201,49 @@
           background-color: rgba(233, 219, 219, 0.849);
           color: black; }
 
-.tratamientosmedicos__main {
-  height: 100%; }
-  .tratamientosmedicos__main .tratamientos__medicosdiv {
+.tratamientosmedicos__main .tratamientos__medicosdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .tratamientosmedicos__main .tratamientos__medicosdiv .tratamientos__box {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; }
-    .tratamientosmedicos__main .tratamientos__medicosdiv .tratamientos__box {
+    flex-direction: column;
+    border: 1px solid darkcyan;
+    width: 70%;
+    margin-top: 2%;
+    background-color: #f9b9b76b;
+    padding: 1%;
+    margin-bottom: 2%; }
+    .tratamientosmedicos__main .tratamientos__medicosdiv .tratamientos__box .tratamientos__medicosp {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 0%; }
+  .tratamientosmedicos__main .tratamientos__medicosdiv .beneficios__box {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    border: 1px solid darkcyan;
+    background-color: #f9b9b76b;
+    margin-bottom: 2%;
+    padding: 1%; }
+    .tratamientosmedicos__main .tratamientos__medicosdiv .beneficios__box .tratamientos__medicosh2 {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
-      border: 1px solid darkcyan;
-      width: 70%;
-      margin-top: 2%;
-      background-color: #f9b9b76b;
-      padding: 1%;
-      margin-bottom: 2%; }
-      .tratamientosmedicos__main .tratamientos__medicosdiv .tratamientos__box .tratamientos__medicosp {
-        text-align: center;
-        font-size: 30px;
-        margin-bottom: 0%; }
-    .tratamientosmedicos__main .tratamientos__medicosdiv .beneficios__box {
+      color: black; }
+    .tratamientosmedicos__main .tratamientos__medicosdiv .beneficios__box .tratamientos__medicosul {
       display: flex;
+      justify-content: center;
+      align-items: start;
+      align-self: center;
       flex-direction: column;
-      justify-items: center;
-      border: 1px solid darkcyan;
-      background-color: #f9b9b76b;
-      margin-bottom: 2%;
-      padding: 1%; }
-      .tratamientosmedicos__main .tratamientos__medicosdiv .beneficios__box .tratamientos__medicosh2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: black; }
-      .tratamientosmedicos__main .tratamientos__medicosdiv .beneficios__box .tratamientos__medicosul {
-        display: flex;
-        justify-content: center;
-        align-items: start;
-        align-self: center;
-        flex-direction: column;
-        list-style: none;
-        padding: 0%; }
-        .tratamientosmedicos__main .tratamientos__medicosdiv .beneficios__box .tratamientos__medicosul li {
-          font-size: 20px; }
+      list-style: none;
+      padding: 0%; }
+      .tratamientosmedicos__main .tratamientos__medicosdiv .beneficios__box .tratamientos__medicosul li {
+        font-size: 20px; }
 
 .nosotros__main .nosotros__div {
   display: flex;
@@ -279,13 +277,15 @@
       color: darkcyan; }
 
 main .hero__contacto {
-  height: max-content; }
-  main .hero__contacto form .form-floating {
-    width: 150%; }
-  main .hero__contacto form div .send {
-    color: black;
-    border-color: #f9b9b785;
-    background-color: #f9b9b7; }
+  height: 100VH; }
+  main .hero__contacto form {
+    width: 50vh;
+    margin-left: 5px;
+    margin-right: 5px; }
+    main .hero__contacto form div .send {
+      color: black;
+      border-color: #f9b9b785;
+      background-color: #f9b9b7; }
 
 .flex__footer {
   display: block;
@@ -468,8 +468,11 @@ main .hero__contacto {
       margin-top: 5%; } }
 
 @media screen and (max-width: 376px) {
+  body .flex__header a .logo {
+    width: 80px;
+    height: 80px; }
   body .flex__header nav div .option li a {
-    font-size: 13px; }
+    font-size: 12px; }
   .main__index .hero h1 {
     letter-spacing: 10px;
     height: 8%;
@@ -482,4 +485,39 @@ main .hero__contacto {
     font-size: 18px; }
   .hero__ubicacion div .section__ubicacion iframe {
     width: 250px;
-    height: 250px; } }
+    height: 250px; }
+  .flex__footer div {
+    display: flex;
+    flex-direction: column; }
+    .flex__footer div a .logo__footer {
+      width: 80px;
+      height: 80px; }
+    .flex__footer div ul {
+      margin-top: 5%;
+      padding-left: 0; }
+      .flex__footer div ul li a .mapa {
+        width: 80px;
+        height: 80px; }
+      .flex__footer div ul div {
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center; }
+    .flex__footer div div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 80%;
+      align-items: center;
+      margin-top: 5%; }
+    .flex__footer div .redes {
+      width: 80px;
+      height: 80px;
+      margin-right: 0;
+      padding: 0; }
+      .flex__footer div .redes span .boton__de__redes {
+        width: 80px;
+        height: 80px; }
+      .flex__footer div .redes span img {
+        width: 80px;
+        height: 80px; } }

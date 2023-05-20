@@ -142,7 +142,6 @@
 
 .tratamientosmedicos__main {
     @extend %hero;
-    height: 100%;
         .tratamientos__medicosdiv {
              @include display-f (flex, center, center);
              flex-direction: column;
@@ -246,11 +245,11 @@
 main {
     .hero__contacto {
         @extend %hero;
-        height: max-content;
+        height: 100VH;
         form {
-            .form-floating {
-                width: 150%;
-            }
+            width: 50vh;
+            margin-left: 5px;
+            margin-right: 5px;
             div {
                 .send{
                     color: black;
